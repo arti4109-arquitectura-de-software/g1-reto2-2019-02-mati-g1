@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="pouchdb-7.1.1.min.js"></script>
+    <script src="procesar.js"></script>
+    <script src="jsencrypt.min.js"></script>
+</head>
+
+<body style="text-align:center">
+    <h2>Registro de Venta </h2><h4>(Experimento) </h4>
+    <form id="formularioVenta" method="GET">
+        <input type="hidden" id="_id" name="_id">
+        <input type="hidden" id="_rev" name="_rev">
+        <br> Referencia: <br>
+        <input type="text" name="referencia" id="referencia">
+        <br>Producto:<br>
+        <input type="text" name="producto" id="producto">
+        <br> Unidades: <br>
+        <input type="number" name="unidades" id="unidades">
+        <br> Valor: <br>
+        <input type="number" name="valor" id="valor">
+        <br> Peso: <br>
+        <input type="number" name="peso" id="peso">
+        <br><br>
+
+        <input type="button" value="Registrar" class="registrar">
+    </form>
+
+ 
+    <br><br>
+    <div id="sync-wrapper" class="editorPage">
+        <strong>Estado de la sincronización: </strong><span id="sync-span"></span>
+      </div>
+</body>
